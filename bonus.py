@@ -16,21 +16,21 @@ def binary_search(data, el):
 
 test_list = [5, 8, 12, 14, 19, 22, 27, 30, 31]
 
-print(binary_search(test_list, 11))
+# print(binary_search(test_list, 11))
 
-# def recursive_bsearch(data, el):
-#     if len(data) == 0:
-#         return -1
+def recursive_bsearch(data, el):
+    if len(data) == 0:
+        return -1
 
-#     else: 
-#         mid = len(data)//2
+    else: 
+        mid = len(data)//2
 
-#         if data[mid] == el:
-#             return mid
-#         else: 
-#             if el < data[mid]:
-#                 return recursive_bsearch(data[:mid], el)
-#             else: 
-#                 return recursive_bsearch(data[mid+1], el)
+        if data[mid] == el:
+            return mid
+        else: 
+            if el < data[mid]:
+                return recursive_bsearch(data[:mid], el)
+            else: 
+                return recursive_bsearch(data[mid+1], el)
 
-# print(recursive_bsearch(test_list, 12))
+print(recursive_bsearch(test_list, 12))

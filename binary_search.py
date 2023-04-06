@@ -16,4 +16,4 @@ def binary_search(data, el):
     return found
 
 test_list = [5,12,14,19,22,27,30,31]
-print(binary_search(test_list,12))
+print(binary_search(test_list,19))
